@@ -18,14 +18,16 @@ jobs:
   hello: 
 
     runs-on: ubuntu-latest
-
+    needs: hi
+    
     steps:
       - name: say hello
-        run: echo "Hello worls"
+        run: echo "Hello worlds"
         
   bye: 
 
     runs-on: ubuntu-latest
+    needs: hello
 
     steps:
       - name: bye worlds
