@@ -1,0 +1,32 @@
+name: first work flow 
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  hi:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hi
+        run: echo "hi world"
+
+  hello: 
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hello
+        run: echo "Hello worls"
+        
+  bye: 
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: bye worlds
+        run: echo "bye worlds"
